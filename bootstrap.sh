@@ -2,14 +2,14 @@
 
 kubectl create namespace mysql || true
 
-kubectl apply -f st-secret.yml
+kubectl apply -f .infrastructure/st-secret.yml
 
-kubectl apply -f st-configMap.yml
+kubectl apply -f .infrastructure/st-configMap.yml
 
-kubectl apply -f st-service.yml
+kubectl apply -f .infrastructure/st-service.yml
 
-kubectl apply -f statefulSet.yml
+kubectl apply -f .infrastructure/statefulSet.yml
 
-kubectl apply -f app-secret.yml
+kubectl apply -f .infrastructure/app-secret.yml
 
-kubectl apply -f deployment.yml
+kubectl apply -f .infrastructure/deployment.yml
